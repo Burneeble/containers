@@ -1,6 +1,6 @@
 # Burneeble containers
 
-This repository contains a set of publicly available DOcker images, ready to be used in a lot of common scenarios.
+This repository contains a set of publicly available Docker images, ready to be used in a lot of common scenarios.
 
 #### List of images
 
