@@ -1,6 +1,7 @@
-FROM ubuntu:22.04
+# Starting from the official Node.js image
+FROM node:18
 
-# install basic packages
+# Install some basic tools
 RUN apt-get update && apt-get install -y \
     curl \
     wget \

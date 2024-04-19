@@ -5,7 +5,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  ghcr_build_and_push:
+  ghcr_publish:
+    name: Publish Docker Image
     runs-on: ubuntu-latest
     strategy:
       matrix:
