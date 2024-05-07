@@ -32,3 +32,12 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 # install basic dependencies for CodeActAgent
 RUN pip3 install --upgrade pip
 RUN pip3 install jupyterlab notebook jupyter_kernel_gateway flake8
+
+# Install NVM
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+# Install Node.js v18
+RUN /bin/bash -c "source $HOME/.nvm/nvm.sh && nvm install 18 && nvm alias default 18"
+
+# Make Node.js available in the PATH
+ENV PATH /root/.nvm/versions/node/v18.0.0/bin:$PATH
