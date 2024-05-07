@@ -1,5 +1,5 @@
 # Starting from the official Node.js image
-FROM node:18
+FROM ubuntu:22.04
 
 # install basic packages
 RUN apt-get update && apt-get install -y \
